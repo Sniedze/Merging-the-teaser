@@ -119,7 +119,7 @@ function textAppears() {
 
     function textDisappears() {
         document.getElementById("slogans").classList.add("fade");
-        setTimeout(bombingGame, 500);
+        setTimeout(bombingGame, 2000);
     }
 }
 

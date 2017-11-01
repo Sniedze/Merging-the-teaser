@@ -2,6 +2,7 @@
     background-image: url(images/street%20background.png);
     background-size: cover;
     height: 100vh;
+    background-color: #424242;
 }
 
 #curtain {

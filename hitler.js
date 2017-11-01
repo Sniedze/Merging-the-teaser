@@ -10,13 +10,17 @@ let step = document.querySelector("#steps");
 let heilMyself = document.querySelector("#myself");
 let curt = document.querySelector("#curtain");
 let curtainAudio = document.querySelector("#curtCloses");
-
+let hitSound = document.querySelector("#hitSteps");
+let dramatic = document.querySelector("#drama");
 
 window.onload = function () {
     console.log("Hitler enters");
     document.getElementById("hitler").classList.add("hitlerIn");
     document.getElementById("heil").classList.add("hitlerContainer");
     setTimeout(actorsScared, 3000);
+    dramatic.play();
+    document.getElementById("drama").loop = true;
+    hitSound.play();
 }
 
 function actorsScared() {
@@ -107,6 +111,7 @@ moustache2.addEventListener("click", moustache2Clicked);
 
 function moustache2Clicked() {
     console.log("clicked");
+    dramatic.pause();
 
     document.getElementById("m2").classList.add("move");
     setTimeout(moustacheVanishes, 900);
