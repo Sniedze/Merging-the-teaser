@@ -14,7 +14,7 @@
 }
 
 .curtainCloses {
-    animation: closed 1.5s forwards;
+    animation: closed 2.5s forwards;
 }
 
 @keyframes closed {
@@ -34,8 +34,8 @@
 
 #m1 {
     position: absolute;
-    left: 45vw;
-    top: 75vh;
+    left: 52vw;
+    top: 65vh;
 }
 
 #m2 {
@@ -48,7 +48,7 @@
 #m3 {
     position: absolute;
     left: 40vw;
-    top: 85vh;
+    top: 69vh;
 }
 
 #maria {
@@ -154,7 +154,7 @@
 }
 
 .heilHitler {
-    animation: handUp 3.5s steps(14);
+    animation: handUp 4.5s steps(14);
 }
 
 @keyframes handUp {
@@ -193,7 +193,7 @@
 
 .mouse {
     transition: transform 0.5s ease-in;
-    transform: translateX(18vw) translateY(20vh);
+    transform: translateX(18vw) translateY(15vh);
 }
 
 .move {
@@ -209,8 +209,8 @@
 
 #text {
     position: absolute;
-    left: 45vw;
-    top: 45vh;
+    left: 35vw;
+    top: 25vh;
     z-index: 10;
     font-family: Brush Script MT;
     font-size: 3.9em;
