@@ -1,0 +1,218 @@
+#background {
+    background-image: url(images/street%20background.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+#curtain {
+    position: absolute;
+    top: -150vh;
+    height: 150vh;
+    width: 100vw;
+    z-index: 25;
+}
+
+.curtainCloses {
+    animation: closed 1.5s forwards;
+}
+
+@keyframes closed {
+    to {
+        transform: translateY(60vw);
+        transition-timing-function: ease-in;
+    }
+}
+
+#m1,
+#m2,
+#m3 {
+    z-index: 5;
+    display: none;
+    cursor: pointer;
+}
+
+#m1 {
+    position: absolute;
+    left: 45vw;
+    top: 75vh;
+}
+
+#m2 {
+    position: absolute;
+    left: 55vw;
+    top: 70vh;
+    z-index: 10;
+}
+
+#m3 {
+    position: absolute;
+    left: 40vw;
+    top: 85vh;
+}
+
+#maria {
+    background-image: url(images/maria_sprite1.png);
+    top: 25vh;
+    left: 55vw;
+    width: 220px;
+    height: 300px;
+    position: absolute;
+}
+
+#professor {
+    background-image: url(images/prof_sprite1.png);
+    top: 25vh;
+    left: 65vw;
+    width: 220px;
+    height: 300px;
+    position: absolute;
+}
+
+#josef {
+    background-image: url(images/josef_sprite01.png);
+    top: 25vh;
+    left: 75vw;
+    width: 220px;
+    height: 300px;
+    position: absolute;
+}
+
+#actors {
+    top: 29vh;
+    left: -20vw;
+    z-index: 20;
+    position: absolute;
+}
+
+.actorMovement {
+    animation: actorMoves 4s forwards;
+}
+
+@keyframes actorMoves {
+    to {
+        transform: translateX(70vw);
+        transition-timing-function: ease-in;
+    }
+}
+
+#hitler {
+    background-image: url(images/hitler_in.png);
+    width: 220px;
+    height: 300px;
+    position: absolute;
+}
+
+.actorsAffraid {
+    animation: actorsAffraid 2s steps(8);
+}
+
+@keyframes actorsAffraid {
+    to {
+        background-position: -1760px;
+    }
+}
+
+.hitlerIn {
+    animation: walksIn 4s steps(26);
+}
+
+@keyframes walksIn {
+    to {
+        background-position: -5720px;
+    }
+}
+
+.hitlerRuns {
+    animation: runs 8s steps(26);
+}
+
+@keyframes runs {
+    to {
+        background-position: -5720px;
+    }
+}
+
+.actorsRun {
+    animation: actorRun 3s steps(30);
+}
+
+@keyframes actorRun {
+    to {
+        background-position: -6601px;
+    }
+}
+
+.hitlerBlushes {
+    animation: moustacheOff 4s steps(9) infinite;
+}
+
+@keyframes moustacheOff {
+    to {
+        background-position: -1980px;
+    }
+}
+
+.heilHitler {
+    animation: handUp 3.5s steps(14);
+}
+
+@keyframes handUp {
+    to {
+        background-position: -3080px;
+    }
+}
+
+#heil {
+    top: 53vh;
+    left: -20vw;
+    z-index: 20;
+    position: relative;
+}
+
+.hitlerContainer {
+    animation: moves 4s forwards;
+}
+
+@keyframes moves {
+    to {
+        transform: translateX(40vw);
+        transition-timing-function: ease-in;
+    }
+}
+
+#mous {
+    position: absolute;
+    top: 15vh;
+    left: 8vw;
+    z-index: 30;
+    display: none;
+    width: 2.0vw;
+    height: 4vh;
+}
+
+.mouse {
+    transition: transform 0.5s ease-in;
+    transform: translateX(18vw) translateY(20vh);
+}
+
+.move {
+    animation: movement 1s forwards;
+}
+
+@keyframes movement {
+    To {
+        transform: translateX(-30vw) translateY(-4vh) scale(0.3);
+        transition-timing-function: ease-in;
+    }
+}
+
+#text {
+    position: absolute;
+    left: 45vw;
+    top: 45vh;
+    z-index: 10;
+    font-family: Brush Script MT;
+    font-size: 3.9em;
+    color: #f8de28;
+    text-shadow: 0 0 5px black;
+}
