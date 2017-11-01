@@ -2,7 +2,6 @@ let moustache1 = document.querySelector("#m1");
 let moustache2 = document.querySelector("#m2");
 let moustache3 = document.querySelector("#m3");
 let hit = document.querySelector("#hitler");
-let playground = document.querySelector("#box");
 let beep = document.querySelector("#tromb");
 let fail = document.querySelector("#saize");
 let runVoice = document.querySelector("#run");
@@ -12,6 +11,7 @@ let curt = document.querySelector("#curtain");
 let curtainAudio = document.querySelector("#curtCloses");
 let hitSound = document.querySelector("#hitSteps");
 let dramatic = document.querySelector("#drama");
+let endMusic = document.querySelector("#music");
 
 window.onload = function () {
     console.log("Hitler enters");
@@ -127,6 +127,11 @@ function movesHand() {
     document.getElementById("hitler").style.backgroundImage = "url(images/hitler_sprite06.png)";
     document.getElementById("hitler").classList.add("heilHitler");
     heilMyself.play();
+    var para = document.createElement("p");
+    var node = document.createTextNode("Heil myself!");
+    para.appendChild(node);
+    var element = document.getElementById("textHeil");
+    element.appendChild(para);
     document.getElementById("m1").style.display = "none";
     document.getElementById("m3").style.display = "none";
     document.getElementById("text").style.display = "none";
@@ -146,4 +151,9 @@ function moustacheClicked() {
 function curtainCloses() {
     curtainAudio.play();
     document.getElementById("curtain").classList.add("curtainCloses");
+    setTimeout(credits, 500);
+}
+
+function credits() {
+    endMusic.play();
 }

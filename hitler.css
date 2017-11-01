@@ -214,6 +214,19 @@
     z-index: 10;
     font-family: Brush Script MT;
     font-size: 3.9em;
+    font-weight: 100;
+    color: #f8de28;
+    text-shadow: 0 0 5px black;
+}
+
+#textHeil {
+    position: absolute;
+    left: 35vw;
+    top: 25vh;
+    z-index: 10;
+    font-family: Brush Script MT;
+    font-size: 3.9em;
+    font-weight: 100;
     color: #f8de28;
     text-shadow: 0 0 5px black;
 }
