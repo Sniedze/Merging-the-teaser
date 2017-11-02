@@ -162,6 +162,6 @@ function allBombed() {
                          actress.style.backgroundImage="url(images/maria1.png)";
                           JTura.style.backgroundImage="url(images/josef_style2.png)";
                           music.pause();
-                          flyingBanner.style.display='none';}, 6000);
-    setTimeout(function(){window.location = "hitler.html";}, 7000);
+                          flyingBanner.style.display='none';
+                         window.location = "hitler.html";}, 6000);
 };}
