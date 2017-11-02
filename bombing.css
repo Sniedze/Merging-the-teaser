@@ -1,7 +1,8 @@
-body{
+body {
     overflow: hidden;
 }
-#city{
+
+#city {
     background-image: url(images/street%20background.png);
     background-size: cover;
     height: 100vh;
@@ -9,7 +10,8 @@ body{
     z-index: -20;
     background-color: #303030;
 }
-#plane{
+
+#plane {
     width: 200px;
     height: 100px;
     background-image: url(images/plane.png);
@@ -19,8 +21,9 @@ body{
     z-index: 10;
     left: 110vw;
 }
-h3{
-   text-align: center;
+
+h3 {
+    text-align: center;
     font-family: Brush Script MT;
     font-size: 3em;
     position: absolute;
@@ -29,82 +32,90 @@ h3{
     color: darkgrey;
     opacity: 0;
 }
-.opacity{
+
+.opacity {
     opacity: 1;
 }
-#sign{
+
+#sign {
     margin-left: 100vw;
     height: 201px;
     /*display: no;*/
 }
-#building1{
+
+#building1 {
     background-image: url(images/building1.png);
     background-size: contain;
     background-repeat: no-repeat;
     height: 314px;
     width: 237px;
     cursor: pointer;
-    position:absolute;
+    position: absolute;
     left: 25vw;
     bottom: 10vh;
-
 }
-.building1Burn{
+
+.building1Burn {
     background-image: url(images/building1-burning.png);
     background-size: contain;
     background-repeat: no-repeat;
     height: 390px;
     width: 260px;
     cursor: pointer;
-    position:absolute;
+    position: absolute;
     left: 25vw;
     bottom: 10.5vh;
 }
-#building2{
-   background-image: url(images/building2.png);
+
+#building2 {
+    background-image: url(images/building2.png);
     background-size: contain;
     background-repeat: no-repeat;
     height: 350px;
     width: 191px;
     cursor: pointer;
-    position:absolute;
+    position: absolute;
     left: 40vw;
     bottom: 10vh;
 }
-.building2Burn{
-   background-image: url(images/building2-burning.png);
+
+.building2Burn {
+    background-image: url(images/building2-burning.png);
     background-size: contain;
     background-repeat: no-repeat;
     height: 419px;
     width: 224px;
     cursor: pointer;
-    position:absolute;
+    position: absolute;
     left: 40vw;
     bottom: 10vh;
 }
-#building3{
+
+#building3 {
     width: 190px;
     height: 337px;
     background-image: url(images/building3.png);
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
-    position:absolute;
+    position: absolute;
     left: 80vw;
     bottom: 9.5vh;
 }
-.building3Burn{
+
+.building3Burn {
     width: 195px;
     height: 440px;
     background-image: url(images/building3-burning.png);
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
-    position:absolute;
+    position: absolute;
     left: 80vw;
     bottom: 10vh;
 }
-#building4{
+
+#building4 {
     background-image: url(images/building4.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -115,7 +126,8 @@ h3{
     left: 5vw;
     cursor: pointer;
 }
-.building4Burn{
+
+.building4Burn {
     background-image: url(images/building4-burning.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -125,7 +137,8 @@ h3{
     bottom: 10vh;
     left: 4vw;
 }
-#building5{
+
+#building5 {
     background-image: url(images/building5.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -136,7 +149,8 @@ h3{
     left: 60vw;
     cursor: pointer;
 }
-.building5Burn{
+
+.building5Burn {
     background-image: url(images/building5-burning.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -147,43 +161,52 @@ h3{
     left: 59vw;
     cursor: pointer;
 }
-#buildings{
+
+#buildings {
     margin-top: 50vh;
-    }
-.actor1{
+}
+
+.actor1 {
     background-image: url(images/maria1.png);
     background-size: contain;
     position: absolute;
     width: 220px;
     height: 300px;
-    left:5vw;
-    top: 58vh;
+    left: 5vw;
+    top: 50vh;
 }
-.actor1v2{
+
+.actor1v2 {
     background-image:
 }
-.actor2{
+
+.actor2 {
     background-image: url(images/actors.png);
     background-size: cover;
     position: absolute;
     width: 220px;
     height: 300px;
     left: 40vw;
-    top: 58vh;
+    top: 50vh;
 }
-.actor3{
+
+.actor3 {
     background-image: url(images/hamlet1.png);
     background-size: contain;
-    position:absolute;
+    position: absolute;
     width: 220px;
     height: 300px;
     left: 80vw;
-    top: 59vh;
+    top: 50vh;
 }
-.actor1, .actor2, .actor3{
+
+.actor1,
+.actor2,
+.actor3 {
     max-height: 300px;
 }
-.allBombs{
+
+.allBombs {
     background-image: url(images/bomb.png);
     background-size: cover;
     width: 20px;
@@ -196,63 +219,80 @@ h3{
     opacity: 0;
 }
 
+
 /*ALL ANIMATIONS////////////////////////////////////////////////*/
-.animation{
+
+.animation {
     opacity: 1;
     transition: transform 4s ease-in;
     transform: translate(-20vw, 55vh) scale(3);
 }
-.animation2{
+
+.animation2 {
     opacity: 1;
     transition: transform 4s ease-in;
     transform: translate(0vw, 59vh) scale(3);
 }
-.animation3{
+
+.animation3 {
     opacity: 1;
     transition: transform 4s ease-in;
     transform: translate(35vw, 59vh) scale(3);
 }
-.animation4{
+
+.animation4 {
     opacity: 1;
     transition: transform 4s ease-in;
     transform: translate(-40vw, 59vh) scale(3);
 }
-.animation5{
+
+.animation5 {
     opacity: 1;
     transition: transform 4s ease-in;
     transform: translate(20vw, 59vh) scale(3);
 }
-.actorscometogether{
+
+.actorscometogether {
     transition: transform 2s ease-out;
     transform: translate(30vw, -4vh);
 }
-.actorscometogether2{
+
+.actorscometogether2 {
     transition: transform 2s ease-out;
     transform: translate(-25vw, -4vh);
 }
-.actorscometogetherCenter{
+
+.actorscometogetherCenter {
     transition: transform 2s ease-out;
     transform: translate(5vw, -4vh);
 }
-.planeFlyOut{
+
+.planeFlyOut {
     transition: transform 4s ease-in;
     transform: translateX(-170vw);
 }
-.planeFlyIn{
-  transition: transform 4s ease-out;
-  transform: translateX(-67vw);
+
+.planeFlyIn {
+    transition: transform 4s ease-out;
+    transform: translateX(-67vw);
 }
-.planeWrap{
+
+.planeWrap {
     animation: planeMove 2s infinite alternate;
 }
-@keyframes planeMove{
-    to{transform: translateY(20px)}
+
+@keyframes planeMove {
+    to {
+        transform: translateY(20px)
+    }
 }
-.storyText{
+
+.storyText {
     transition: transform 5s ease-out;
     transform: translateX(-70vw);
 }
-.storyTextOut{
+
+.storyTextOut {
     transition: transform 5s ease-in;
     transform: translateX(-200vw);
 }
