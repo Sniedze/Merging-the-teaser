@@ -26,9 +26,10 @@ function bombMe(){
     fallingSound.play();
     bomb1.classList.add("animation");
     bomb1.addEventListener('transitionend', function(){
-                 bomb1.classList.remove("animation");
-        bomb1.style.display='none';
-                building1.style.display='none';
+                bomb1.classList.remove("animation");
+                bomb1.style.display='none';
+                building1.removeAttribute('id');
+                building1.classList.add("building1Burn");
                 explosion.play();
                 bombCount++;
                 fallingSound.addEventListener('ended', function(){allBombed();
@@ -43,11 +44,12 @@ function bombMe2(){
     fallingSound2.play();
     bomb2.classList.add("animation2");
     bomb2.addEventListener('transitionend', function(){
-                 bomb2.classList.remove("animation2");
-        bomb2.style.display='none';
-                building2.style.display='none';
+                bomb2.classList.remove("animation2");
+                bomb2.style.display='none';
+                building2.removeAttribute('id');
+                building2.classList.add("building2Burn");
                 explosion2.play();
-                 bombCount++;
+                bombCount++;
         fallingSound2.addEventListener('ended', function(){allBombed();
                           })
     })
@@ -62,11 +64,12 @@ function bombMe3(){
     bomb3.classList.add("animation3");
     bomb3.addEventListener('transitionend', function(){
                  bomb3.classList.remove("animation3");
-                building3.style.display='none';
                bomb3.style.display='none';
+                building3.removeAttribute('id');
+                building3.classList.add("building3Burn");
                 explosion.play();
                  bombCount++;
-                 fallingSound3.addEventListener('ended', function(){allBombed();
+                fallingSound3.addEventListener('ended', function(){allBombed();
                           })
     })
 }
@@ -79,7 +82,9 @@ function bombMe4(){
     bomb4.classList.add("animation4");
     bomb4.addEventListener('transitionend', function(){
                  bomb4.classList.remove("animation4");
-                building4.style.display='none';
+                building4.removeAttribute('id');
+                building4.classList.add("building4Burn");
+                //building4.style.display='none';
                     bomb4.style.display='none';
                 explosion.play();
                  bombCount++;
@@ -97,7 +102,8 @@ function bombMe5(){
     bomb5.addEventListener('transitionend', function(){
                  bomb5.classList.remove("animation5");
                 bomb5.style.display='none';
-                building5.style.display='none';
+                 building5.removeAttribute('id');
+                building5.classList.add("building5Burn");
                explosion2.play();
                  bombCount++;
                   fallingSound5.addEventListener('ended', function(){allBombed();
@@ -108,19 +114,21 @@ function allBombed() {
     //let buildings = document.querySelectorAll(".dontDisplay");//I WISH COULD UNDERSTAND WHY THE BOMB COUNT ==5 OR >4 SEQUENCE FIRES OFF MORE THAN ONCE BUT I JUST FUCKING CANT, DOESNT WORK PROPERLY IF YOU COUNT CLASS LENGTH EITHER, FUCK THIS, I'M OUT, STILL WORKS.//////
     if(bombCount>4){
         let plane = document.getElementById("plane");
+        let buildings = document.getElementById("buildings");
         plane.classList.remove("planeFlyIn");
         actress.classList.add("actorscometogether");
         proffesor.classList.add("actorscometogether2");
         plane.classList.add("planeFlyOut");
+        buildings.style.display='none';
         hint.style.opacity='0';
-
         flyingBanner.classList.add("storyText");
         flyingBanner.addEventListener('transitionend', narrate);
     }
 }
-    } )
+
+} )
 }
-function narrate(){
+ function narrate(){
     planeSound.pause();
     let warAudio = document.getElementById("voiceOver");
     warAudio.play();
@@ -132,4 +140,5 @@ function switchActors(){
     plane.style.display='none';
      flyingBanner.classList.remove("storyText");
     flyingBanner.classList.add("storyTextOut");
+
 }
