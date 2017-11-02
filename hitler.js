@@ -186,7 +186,7 @@ function curtainCloses() {
     curtainAudio.play();
     document.getElementById("curtCloses").loop = true;
     document.getElementById("curtain").classList.add("curtainCloses");
-    setTimeout(directToIndex, 20000);
+    setTimeout(directToIndex, 21000);
 }
 
 
