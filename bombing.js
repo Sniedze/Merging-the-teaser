@@ -1,8 +1,8 @@
 let explosion = document.getElementById("explode");
 let explosion2 = document.getElementById("explode2");
 let actress = document.querySelector(".actor1");
-let proffesor = document.querySelector(".actor3");
-let JTura = document.querySelector(".actor2");
+let JTura = document.querySelector(".actor3");
+let proffesor = document.querySelector(".actor2");
 let flyingBanner = document.querySelector(".signWrap");
 
 let planeSound = document.getElementById("flySound");
@@ -13,6 +13,11 @@ let bombCount = 0;
 //THESE ARE THE FUNCTIONS TO FIRE OFF THE BOMBS AND CHAIN OF EVENTS////////////
 window.addEventListener('load', flyIn);
 function flyIn(){
+    let building1 = document.getElementById("building1");
+    let building2 = document.getElementById("building2");
+    let building3 = document.getElementById("building3");
+    let building4 = document.getElementById("building4");
+    let building5 = document.getElementById("building5");
     let plane = document.getElementById("plane");
     plane.classList.add("planeFlyIn");
     planeSound.play();
@@ -117,7 +122,7 @@ function allBombed() {
         let buildings = document.getElementById("buildings");
         plane.classList.remove("planeFlyIn");
         actress.classList.add("actorscometogether");
-        proffesor.classList.add("actorscometogether2");
+        JTura.classList.add("actorscometogether2");
         plane.classList.add("planeFlyOut");
         buildings.style.display='none';
         hint.style.opacity='0';
@@ -140,5 +145,4 @@ function switchActors(){
     plane.style.display='none';
      flyingBanner.classList.remove("storyText");
     flyingBanner.classList.add("storyTextOut");
-
 }
