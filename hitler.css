@@ -11,20 +11,19 @@ body {
 
 #curtain {
     position: absolute;
-    top: -7968px;
+    top: -556vh;
     width: 100vw;
     z-index: 25;
     overflow: hidden;
 }
 
 .curtainCloses {
-    animation: closed 25s forwards;
+    animation: closed 17s linear forwards;
 }
 
 @keyframes closed {
     to {
-        transform: translateY(7760px);
-        transition-timing-function: linear;
+        transform: translateY(530vh);
     }
 }
 
@@ -57,7 +56,6 @@ body {
 
 #maria {
     background-image: url(images/maria_sprite1.png);
-    top: 25vh;
     left: 55vw;
     width: 220px;
     height: 300px;
@@ -66,7 +64,6 @@ body {
 
 #professor {
     background-image: url(images/prof_sprite1.png);
-    top: 25vh;
     left: 65vw;
     width: 220px;
     height: 300px;
@@ -75,7 +72,6 @@ body {
 
 #josef {
     background-image: url(images/josef_sprite01.png);
-    top: 25vh;
     left: 75vw;
     width: 220px;
     height: 300px;
@@ -83,7 +79,7 @@ body {
 }
 
 #actors {
-    top: 29vh;
+    top: 54vh;
     left: -20vw;
     z-index: 20;
     position: absolute;
@@ -239,7 +235,7 @@ body {
 
 #textHeil {
     position: absolute;
-    left: 37vw;
+    left: 33vw;
     top: 24vh;
     z-index: 10;
     font-family: Brush Script MT;
@@ -252,7 +248,7 @@ body {
 #textStatistics {
     position: absolute;
     left: 57vw;
-    top: 34vh;
+    top: 44vh;
     z-index: 10;
     font-family: Brush Script MT;
     font-size: 5em;
@@ -264,7 +260,7 @@ body {
 #peopleKill {
     position: absolute;
     left: 57vw;
-    top: 44vh;
+    top: 34vh;
     z-index: 10;
     font-family: Brush Script MT;
     font-size: 5em;
