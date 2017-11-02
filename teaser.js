@@ -98,7 +98,7 @@ function textAppears() {
     theat.pause();
     mus.play();
     unt.play();
-    setTimeout(playWar, 1000);
+    setTimeout(playWar, 1500);
 
     function playWar() {
         war2.play();
