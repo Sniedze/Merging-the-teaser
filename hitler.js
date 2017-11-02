@@ -60,6 +60,7 @@ function actorsRun() {
 
 
 function moustacheFalls() {
+
     step.pause();
     document.getElementById("hitler").style.backgroundImage = "url(images/hitler_sprite04.png)";
     document.getElementById("hitler").classList.remove("hitlerIn");

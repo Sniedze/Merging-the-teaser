@@ -121,10 +121,3 @@ function musicEnds() {
     window.location = "bombing.html";
 
 }
-
-/*setTimeout(bombingGame, 1000);
-
-
-function bombingGame() {
-
-}*/

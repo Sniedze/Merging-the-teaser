@@ -1,190 +1,195 @@
- h1 {
-     font-family: Franklin Gothic;
-     font-size: 5em;
-     color: #f8de28;
-     margin-bottom: 0;
-     margin-top: 1vh;
-     top: 5vh;
-     left: 15vw;
-     z-index: 100;
-     position: absolute;
- }
+body {
+    overflow: hidden;
+}
 
- span {
-     font-family: Brush Script MT;
-     font-size: 1.3em;
-     font-weight: 100;
- }
+h1 {
+    font-family: Franklin Gothic;
+    font-size: 5em;
+    color: #f8de28;
+    margin-bottom: 0;
+    margin-top: 1vh;
+    top: 5vh;
+    left: 15vw;
+    z-index: 100;
+    position: absolute;
+}
 
- #back {
-     background-image: url(images/theater-background.png);
-     width: 100vw;
-     height: 100vh;
-     background-color: #424242;
-     overflow: hidden;
- }
+span {
+    font-family: Brush Script MT;
+    font-size: 1.3em;
+    font-weight: 100;
+}
 
- #buttons {
-     position: absolute;
-     top: 23vh;
-     left: 9vw;
-     z-index: 100;
- }
+#back {
+    background-image: url(images/theater-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: #424242;
+    overflow: hidden;
+}
 
- button {
-     font-family: Franklin Gothic;
-     font-size: 1.5em;
-     font-weight: 600;
-     width: 25vw;
-     height: 6vh;
-     margin-bottom: 1vh;
-     border-radius: 10px;
-     background-color: rgba(255, 255, 255, 0.7);
-     border: 4px solid grey;
-     color: #424242;
-     cursor: pointer;
- }
+#buttons {
+    position: absolute;
+    top: 23vh;
+    left: 9vw;
+    z-index: 100;
+}
 
- button:hover {
-     background-color: darkgrey;
-     border: 4px solid grey;
-     color: white;
- }
+button {
+    font-family: Franklin Gothic;
+    font-size: 1.5em;
+    font-weight: 600;
+    width: 25vw;
+    height: 6vh;
+    margin-bottom: 1vh;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 4px solid grey;
+    color: #424242;
+    cursor: pointer;
+}
 
- .wrong {
-     display: none;
- }
+button:hover {
+    background-color: darkgrey;
+    border: 4px solid grey;
+    color: white;
+}
 
- #promter {
-     margin-left: 5vw;
-     position: absolute;
-     top: 73vh;
-     left: 50vw;
-     z-index: 100;
-     cursor: pointer;
- }
+.wrong {
+    display: none;
+}
 
- #ha {
-     background-image: url(images/hamlet_sprite01.png);
-     position: absolute;
-     z-index: 100;
-     top: 51vh;
-     left: 28vw;
-     width: 220px;
-     height: 300px;
- }
+#promter {
+    margin-left: 5vw;
+    position: absolute;
+    top: 73vh;
+    left: 50vw;
+    z-index: 100;
+    cursor: pointer;
+}
 
- .hamletConfused {
-     animation: haml 5.5s steps(13) infinite;
- }
+#ha {
+    background-image: url(images/hamlet_sprite01.png);
+    position: absolute;
+    z-index: 100;
+    top: 51vh;
+    left: 28vw;
+    width: 220px;
+    height: 300px;
+}
 
- @keyframes haml {
-     to {
-         background-position: -2860px;
-     }
- }
+.hamletConfused {
+    animation: haml 5.5s steps(13) infinite;
+}
 
- .hamletSpeaks {
-     animation: speaks 5s steps(9) forwards;
- }
+@keyframes haml {
+    to {
+        background-position: -2860px;
+    }
+}
 
- @keyframes speaks {
-     100% {
-         background-position: -1980px;
-     }
- }
+.hamletSpeaks {
+    animation: speaks 5s steps(9) forwards;
+}
 
- #maria {
-     position: absolute;
-     top: 50vh;
-     left: 10vw;
- }
+@keyframes speaks {
+    100% {
+        background-position: -1980px;
+    }
+}
 
- #actor {
-     position: absolute;
-     top: 50vh;
-     left: 50vw;
- }
+#maria {
+    position: absolute;
+    top: 50vh;
+    left: 10vw;
+}
 
- #hint {
-     font-family: Franklin Gothic;
-     position: absolute;
-     left: 4vw;
-     bottom: 18vh;
-     width: 100px;
-     z-index: 10;
-     font-size: 2.5em;
-     color: #f8de28;
-     border: 4px solid grey;
-     border-radius: 10px;
-     background-color: rgba(255, 255, 255, 0.7);
-     text-shadow: 0 0 5px black;
-     text-align: center;
-     cursor: pointer;
- }
+#actor {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+}
 
- #curtain {
-     position: absolute;
-     z-index: 5;
-     top: 0vh;
-     width: 100vw;
-     height: 100vh;
-     overflow: hidden;
- }
+#hint {
+    font-family: Franklin Gothic;
+    position: absolute;
+    left: 4vw;
+    bottom: 18vh;
+    width: 100px;
+    z-index: 10;
+    font-size: 2.5em;
+    color: #f8de28;
+    border: 4px solid grey;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    cursor: pointer;
+}
 
- .curtainOpen {
-     animation: open 3s forwards;
- }
+#curtain {
+    position: absolute;
+    z-index: 5;
+    top: 0vh;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
 
- @keyframes open {
-     To {
-         transform: translateY(-165vh);
-         transition-timing-function: ease-out;
-     }
- }
+.curtainOpen {
+    animation: open 3s forwards;
+}
 
- .fade {
-     animation: fadeIt 2s 1.5s forwards;
- }
+@keyframes open {
+    To {
+        transform: translateY(-165vh);
+        transition-timing-function: ease-out;
+    }
+}
 
- @keyframes fadeIt {
-     To {
-         -webkit-opacity: 0.01;
-         -moz-opacity: 0.01;
-         opacity: 0.01;
-         color: #000;
-     }
- }
+.fade {
+    animation: fadeIt 2s 1.5s forwards;
+}
 
- #slogans {
-     font-family: Brush Script MT;
-     position: absolute;
-     left: 10vw;
-     top: 5vh;
-     width: 100%;
-     outline: none;
-     justify-content: center;
-     align-items: center;
-     font-size: 5em;
-     color: #f8de28;
-     margin: 3px;
- }
+@keyframes fadeIt {
+    To {
+        -webkit-opacity: 0.01;
+        -moz-opacity: 0.01;
+        opacity: 0.01;
+        color: #000;
+    }
+}
 
- .hintFade {
-     animation: hintFade 2.5s infinite;
- }
+#slogans {
+    font-family: Brush Script MT;
+    position: absolute;
+    left: 10vw;
+    top: 5vh;
+    width: 100%;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    color: #f8de28;
+    margin: 3px;
+}
 
- @keyframes hintFade {
-     30% {
-         -webkit-opacity: 0.01;
-         -moz-opacity: 0.01;
-         opacity: 0.01;
-         color: #000;
-     }
-     100% {
-         -webkit-opacity: 1;
-         -moz-opacity: 1;
-         opacity: 1;
-         transition: all 4s ease-out 0s;
-     }
- }
+.hintFade {
+    animation: hintFade 2.5s infinite;
+}
+
+@keyframes hintFade {
+    30% {
+        -webkit-opacity: 0.01;
+        -moz-opacity: 0.01;
+        opacity: 0.01;
+        color: #000;
+    }
+    100% {
+        -webkit-opacity: 1;
+        -moz-opacity: 1;
+        opacity: 1;
+        transition: all 4s ease-out 0s;
+    }
+}

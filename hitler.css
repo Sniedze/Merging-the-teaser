@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 #background {
     background-image: url(images/street%20background.png);
     background-size: cover;
@@ -124,7 +128,7 @@
 }
 
 .hitlerRuns {
-    animation: runs 8s steps(26);
+    animation: runs 5s steps(26);
 }
 
 @keyframes runs {
