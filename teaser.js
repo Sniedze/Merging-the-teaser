@@ -63,7 +63,7 @@ function beClicked() {
         evt.target.style.backgroundPositionX = "-1760px";
     }
     aud.play();
-    setTimeout(curtainOpens, 6100);
+    setTimeout(curtainOpens, 6500);
 }
 
 function curtainOpens() {

@@ -127,6 +127,7 @@ function moustache2Clicked() {
 
 function movesHand() {
     document.getElementById("background").style.backgroundImage = "url(images/theater-background2.png)";
+    document.getElementById("background").style.backgroundSize = "contain";
     document.getElementById("hitler").style.backgroundImage = "url(images/hitler_sprite06.png)";
     document.getElementById("hitler").classList.add("heilHitler");
     heilMyself.play();
@@ -138,7 +139,7 @@ function movesHand() {
     document.getElementById("m1").style.display = "none";
     document.getElementById("m3").style.display = "none";
     document.getElementById("text").style.display = "none";
-    setTimeout(curtainCloses, 3500);
+    setTimeout(statisticsAppear, 3500);
 }
 moustache1.addEventListener("click", moustacheClicked);
 moustache3.addEventListener("click", moustacheClicked);
@@ -151,12 +152,34 @@ function moustacheClicked() {
 
 }
 
+function statisticsAppear() {
+    endMusic.play();
+    document.getElementById("textHeil").style.display = "none";
+    var para = document.createElement("p");
+    var node = document.createTextNode("5 buildings destroyed");
+    para.appendChild(node);
+    var element = document.getElementById("textStatistics");
+    element.appendChild(para);
+    setTimeout(peopleKilled, 2000)
+}
+
+function peopleKilled() {
+    document.getElementById("textStatistics").style.display = "none";
+    var para = document.createElement("p");
+    var node = document.createTextNode("88 civilians killed");
+    para.appendChild(node);
+    var element = document.getElementById("peopleKill");
+    element.appendChild(para);
+    setTimeout(curtainCloses, 500)
+
+}
+
 function curtainCloses() {
     curtainAudio.play();
     document.getElementById("curtain").classList.add("curtainCloses");
-    setTimeout(credits, 500);
 }
 
-function credits() {
-    endMusic.play();
-}
+/*curt.addEventListener('transitionend', function () {
+            endMusic.pause();
+
+        }*/
