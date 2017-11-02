@@ -7,8 +7,7 @@ body{
     height: 100vh;
     position: absolute;
     z-index: -20;
-    overflow: hidden;
-    background-color: #424242;
+    background-color: #303030;
 }
 #plane{
     width: 200px;
@@ -22,7 +21,8 @@ body{
 }
 h3{
    text-align: center;
-    font-family: Franklin Gothic;
+    font-family: Brush Script MT;
+    font-size: 3em;
     position: absolute;
     left: 45vw;
     top: 200px;
@@ -91,7 +91,7 @@ h3{
     cursor: pointer;
     position:absolute;
     left: 80vw;
-    bottom: 10vh;
+    bottom: 9.5vh;
 }
 .building3Burn{
     width: 195px;
@@ -112,7 +112,7 @@ h3{
     height: 342px;
     position: absolute;
     bottom: 10vh;
-    left: 0vw;
+    left: 5vw;
     cursor: pointer;
 }
 .building4Burn{
@@ -123,7 +123,7 @@ h3{
     height: 437px;
     position: absolute;
     bottom: 10vh;
-    left: -1vw;
+    left: 4vw;
 }
 #building5{
     background-image: url(images/building5.png);
@@ -144,26 +144,41 @@ h3{
     height: 429px;
     position: absolute;
     bottom: 10vh;
-    left: 60vw;
+    left: 59vw;
     cursor: pointer;
 }
 #buildings{
     margin-top: 50vh;
     }
 .actor1{
+    background-image: url(images/maria1.png);
+    background-size: contain;
     position: absolute;
-    left:0vw;
-    bottom: 10vh;
+    width: 220px;
+    height: 300px;
+    left:5vw;
+    top: 58vh;
+}
+.actor1v2{
+    background-image:
 }
 .actor2{
+    background-image: url(images/actors.png);
+    background-size: cover;
     position: absolute;
+    width: 220px;
+    height: 300px;
     left: 40vw;
-    bottom: 10vh;
+    top: 58vh;
 }
 .actor3{
+    background-image: url(images/hamlet1.png);
+    background-size: contain;
     position:absolute;
+    width: 220px;
+    height: 300px;
     left: 80vw;
-    bottom: 10vh;
+    top: 59vh;
 }
 .actor1, .actor2, .actor3{
     max-height: 300px;
@@ -185,8 +200,7 @@ h3{
 .animation{
     opacity: 1;
     transition: transform 4s ease-in;
-    transform: translate(-22vw, 55vh) scale(3);
-
+    transform: translate(-20vw, 55vh) scale(3);
 }
 .animation2{
     opacity: 1;
@@ -201,7 +215,7 @@ h3{
 .animation4{
     opacity: 1;
     transition: transform 4s ease-in;
-    transform: translate(-45vw, 59vh) scale(3);
+    transform: translate(-40vw, 59vh) scale(3);
 }
 .animation5{
     opacity: 1;
@@ -210,11 +224,15 @@ h3{
 }
 .actorscometogether{
     transition: transform 2s ease-out;
-    transform: translateX(30vw);
+    transform: translate(30vw, -4vh);
 }
 .actorscometogether2{
     transition: transform 2s ease-out;
-    transform: translateX(-30vw);
+    transform: translate(-25vw, -4vh);
+}
+.actorscometogetherCenter{
+    transition: transform 2s ease-out;
+    transform: translate(5vw, -4vh);
 }
 .planeFlyOut{
     transition: transform 4s ease-in;
@@ -222,7 +240,7 @@ h3{
 }
 .planeFlyIn{
   transition: transform 4s ease-out;
-  transform: translateX(-70vw);
+  transform: translateX(-67vw);
 }
 .planeWrap{
     animation: planeMove 2s infinite alternate;
