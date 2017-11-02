@@ -3,6 +3,7 @@ let explosion2 = document.getElementById("explode2");
 let actress = document.querySelector(".actor1");
 let proffesor = document.querySelector(".actor3");
 let JTura = document.querySelector(".actor2");
+let flyingBanner = document.querySelector(".signWrap");
 
 let planeSound = document.getElementById("flySound");
 planeSound.volume = 0.2;
@@ -112,7 +113,7 @@ function allBombed() {
         proffesor.classList.add("actorscometogether2");
         plane.classList.add("planeFlyOut");
         hint.style.opacity='0';
-        let flyingBanner = document.querySelector(".signWrap");
+
         flyingBanner.classList.add("storyText");
         flyingBanner.addEventListener('transitionend', narrate);
     }
@@ -127,5 +128,8 @@ function narrate(){
     warAudio.addEventListener('ended', switchActors);
 }
 function switchActors(){
-
+    let plane = document.getElementById("plane");
+    plane.style.display='none';
+     flyingBanner.classList.remove("storyText");
+    flyingBanner.classList.add("storyTextOut");
 }

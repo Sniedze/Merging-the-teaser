@@ -112,7 +112,7 @@ h3{
     bottom: 10vh;
 }
 .actor1, .actor2, .actor3{
-    max-height: 200px;
+    max-height: 300px;
 }
 .allBombs{
     background-image: url(images/bomb.png);
@@ -176,6 +176,10 @@ h3{
     to{transform: translateY(20px)}
 }
 .storyText{
-    transition: transform 8s ease-out;
+    transition: transform 5s ease-out;
     transform: translateX(-70vw);
+}
+.storyTextOut{
+    transition: transform 5s ease-in;
+    transform: translateX(-200vw);
 }
