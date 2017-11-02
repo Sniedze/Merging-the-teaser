@@ -57,6 +57,11 @@ function beClicked() {
     document.getElementById("ha").classList.remove("hamletConfused");
     document.getElementById("ha").style.backgroundImage = "url(images/hamlet_sprite02.png)";
     document.getElementById("ha").classList.add("hamletSpeaks");
+    document.getElementById("ha").addEventListener("animationend", hamletStopsMouth);
+
+    function hamletStopsMouth(evt) {
+        evt.target.style.backgroundPositionX = "-1760px";
+    }
     aud.play();
     setTimeout(curtainOpens, 5900);
 }

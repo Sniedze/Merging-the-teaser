@@ -18,9 +18,10 @@
 
  #back {
      background-image: url(images/theater-background.png);
-     background-size: cover;
+     width: 100vw;
      height: 100vh;
      background-color: #424242;
+     overflow: hidden;
  }
 
  #buttons {
@@ -84,7 +85,7 @@
  }
 
  .hamletSpeaks {
-     animation: speaks 5s steps(9) infinite;
+     animation: speaks 5s steps(9) forwards;
  }
 
  @keyframes speaks {
@@ -127,7 +128,7 @@
      z-index: 5;
      top: 0vh;
      width: 100vw;
-     height: 110vh;
+     height: 100vh;
  }
 
  .curtainOpen {
