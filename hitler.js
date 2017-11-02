@@ -138,7 +138,7 @@ function movesHand() {
     document.getElementById("m1").style.display = "none";
     document.getElementById("m3").style.display = "none";
     document.getElementById("text").style.display = "none";
-    setTimeout(curtainCloses, 3000);
+    setTimeout(curtainCloses, 3500);
 }
 moustache1.addEventListener("click", moustacheClicked);
 moustache3.addEventListener("click", moustacheClicked);

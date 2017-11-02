@@ -6,7 +6,7 @@ body {
     background-image: url(images/street%20background.png);
     background-size: cover;
     height: 100vh;
-    background-color: #424242;
+    background-color: #303030;
 }
 
 #curtain {
@@ -211,7 +211,7 @@ body {
 
 .mouse {
     transition: transform 0.5s ease-in;
-    transform: translateX(18vw) translateY(15vh);
+    transform: translateX(18vw) translateY(15vh) scale(1.6);
 }
 
 .move {
@@ -231,20 +231,20 @@ body {
     top: 25vh;
     z-index: 10;
     font-family: Brush Script MT;
-    font-size: 3.9em;
+    font-size: 5em;
     font-weight: 100;
     color: #f8de28;
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 10px black;
 }
 
 #textHeil {
     position: absolute;
-    left: 35vw;
-    top: 25vh;
+    left: 37vw;
+    top: 24vh;
     z-index: 10;
     font-family: Brush Script MT;
-    font-size: 3.9em;
+    font-size: 5em;
     font-weight: 100;
     color: #f8de28;
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 10px black;
 }
