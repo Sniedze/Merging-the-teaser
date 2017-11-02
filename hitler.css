@@ -23,7 +23,7 @@ body {
 
 @keyframes closed {
     to {
-        transform: translateY(527vh);
+        transform: translateY(530vh);
     }
 }
 
@@ -56,7 +56,6 @@ body {
 
 #maria {
     background-image: url(images/maria_sprite1.png);
-    top: 25vh;
     left: 55vw;
     width: 220px;
     height: 300px;
@@ -65,7 +64,6 @@ body {
 
 #professor {
     background-image: url(images/prof_sprite1.png);
-    top: 25vh;
     left: 65vw;
     width: 220px;
     height: 300px;
@@ -74,7 +72,6 @@ body {
 
 #josef {
     background-image: url(images/josef_sprite01.png);
-    top: 25vh;
     left: 75vw;
     width: 220px;
     height: 300px;
@@ -82,7 +79,7 @@ body {
 }
 
 #actors {
-    top: 29vh;
+    top: 54vh;
     left: -20vw;
     z-index: 20;
     position: absolute;
@@ -251,7 +248,7 @@ body {
 #textStatistics {
     position: absolute;
     left: 57vw;
-    top: 34vh;
+    top: 44vh;
     z-index: 10;
     font-family: Brush Script MT;
     font-size: 5em;
