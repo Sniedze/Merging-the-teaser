@@ -34,20 +34,20 @@
 
 #m1 {
     position: absolute;
-    left: 52vw;
+    left: 54vw;
     top: 65vh;
 }
 
 #m2 {
     position: absolute;
-    left: 55vw;
+    left: 64vw;
     top: 70vh;
     z-index: 10;
 }
 
 #m3 {
     position: absolute;
-    left: 40vw;
+    left: 60vw;
     top: 69vh;
 }
 
@@ -154,7 +154,7 @@
 }
 
 .heilHitler {
-    animation: handUp 4.5s steps(14);
+    animation: handUp 3s steps(14);
 }
 
 @keyframes handUp {
@@ -181,6 +181,20 @@
     }
 }
 
+.container {
+    animation: mo 4s forwards;
+}
+
+@keyframes mo {
+    0% {
+        transform: translateX(40vw);
+    }
+    100% {
+        transform: translateX(58vw);
+        transition-timing-function: ease-in;
+    }
+}
+
 #mous {
     position: absolute;
     top: 15vh;
@@ -202,7 +216,7 @@
 
 @keyframes movement {
     To {
-        transform: translateX(-30vw) translateY(-4vh) scale(0.3);
+        transform: translateX(-20vw) translateY(-4vh) scale(0.3);
         transition-timing-function: ease-in;
     }
 }

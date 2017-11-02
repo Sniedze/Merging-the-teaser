@@ -44,6 +44,8 @@ function actorsRun() {
     document.getElementById("hitler").style.backgroundImage = "url(images/hitler_sprite03.png)";
     document.getElementById("hitler").classList.remove("hitlerBlushes");
     document.getElementById("hitler").classList.add("hitlerRuns");
+    document.getElementById("heil").classList.remove("hitlerContainer");
+    document.getElementById("heil").classList.add("container");
     document.getElementById("maria").style.backgroundImage = "url(images/maria_sprite2.png)";
     document.getElementById("professor").style.backgroundImage = "url(images/prof_sprite2.png)";
     document.getElementById("josef").style.backgroundImage = "url(images/josef_sprite02.png)";
@@ -85,7 +87,7 @@ function moustachesAppear() {
     document.getElementById("m2").style.display = "block";
     document.getElementById("m3").style.display = "block";
     var para = document.createElement("p");
-    var node = document.createTextNode("Choose the right moustache");
+    var node = document.createTextNode("Click the right moustache");
     para.appendChild(node);
     var element = document.getElementById("text");
     element.appendChild(para);
