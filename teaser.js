@@ -81,7 +81,7 @@ function curtainOpens() {
     function the() {
         they.play();
     }
-    setTimeout(untilWar, 2500);
+    setTimeout(untilWar, 3000);
 }
 
 function untilWar() {

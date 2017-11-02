@@ -12,18 +12,19 @@ h1 {
     left: 15vw;
     z-index: 100;
     position: absolute;
+    text-shadow: 0 0 5px black;
 }
 
 span {
     font-family: Brush Script MT;
     font-size: 1.3em;
     font-weight: 100;
+    text-shadow: 0 0 5px black;
 }
 
 #back {
     background-image: url(images/theater-background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
     height: 100vh;
     background-color: #424242;
     overflow: hidden;
@@ -63,8 +64,8 @@ button:hover {
 #promter {
     margin-left: 5vw;
     position: absolute;
-    top: 73vh;
-    left: 50vw;
+    top: 75vh;
+    left: 45vw;
     z-index: 100;
     cursor: pointer;
 }
@@ -73,7 +74,7 @@ button:hover {
     background-image: url(images/hamlet_sprite01.png);
     position: absolute;
     z-index: 100;
-    top: 51vh;
+    top: 55vh;
     left: 28vw;
     width: 220px;
     height: 300px;
@@ -101,13 +102,13 @@ button:hover {
 
 #maria {
     position: absolute;
-    top: 50vh;
+    top: 53vh;
     left: 10vw;
 }
 
 #actor {
     position: absolute;
-    top: 50vh;
+    top: 52vh;
     left: 50vw;
 }
 
@@ -133,7 +134,7 @@ button:hover {
     z-index: 5;
     top: 0vh;
     width: 100vw;
-    height: 100vh;
+    height: 93vh;
     overflow: hidden;
 }
 
@@ -173,6 +174,7 @@ button:hover {
     font-size: 5em;
     color: #f8de28;
     margin: 3px;
+    text-shadow: 0 0 5px black;
 }
 
 .hintFade {
