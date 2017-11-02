@@ -154,13 +154,14 @@ function moustacheClicked() {
 
 function statisticsAppear() {
     endMusic.play();
+    document.getElementById("music").loop = true;
     document.getElementById("textHeil").style.display = "none";
     var para = document.createElement("p");
     var node = document.createTextNode("5 buildings destroyed");
     para.appendChild(node);
     var element = document.getElementById("textStatistics");
     element.appendChild(para);
-    setTimeout(peopleKilled, 2000)
+    setTimeout(peopleKilled, 2000);
 }
 
 function peopleKilled() {
@@ -170,16 +171,20 @@ function peopleKilled() {
     para.appendChild(node);
     var element = document.getElementById("peopleKill");
     element.appendChild(para);
-    setTimeout(curtainCloses, 500)
+    setTimeout(curtainCloses, 2000);
 
 }
 
 function curtainCloses() {
     curtainAudio.play();
+    document.getElementById("curtCloses").loop = true;
     document.getElementById("curtain").classList.add("curtainCloses");
+    setTimeout(directToIndex, 21000);
 }
 
-/*curt.addEventListener('transitionend', function () {
-            endMusic.pause();
 
-        }*/
+function directToIndex() {
+    curtainAudio.pause();
+    endMusic.pause();
+    window.location = "index.html";
+}
