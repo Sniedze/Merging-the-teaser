@@ -138,9 +138,16 @@ function flyIn() {
                 let plane = document.getElementById("plane");
                 let buildings = document.getElementById("buildings");
                 plane.classList.remove("planeFlyIn");
-                actress.classList.add("actorscometogether");
-                JTura.classList.add("actorscometogether2");
-                proffesor.classList.add("actorscometogetherCenter");
+                actress.style.display = "block";
+                JTura.style.display = "block";
+                proffesor.style.display = "block";
+                setTimeout(comeTogether, 1000);
+
+                function comeTogether() {
+                    actress.classList.add("actorscometogether");
+                    JTura.classList.add("actorscometogether2");
+                    proffesor.classList.add("actorscometogetherCenter");
+                }
                 plane.classList.add("planeFlyOut");
                 buildings.style.display = 'none';
                 hint.style.opacity = '0';
@@ -187,8 +194,7 @@ function narrate() {
             actress.style.backgroundImage = "url(images/maria1.png)";
             JTura.style.backgroundImage = "url(images/josef_style2.png)";
             music.pause();
-            flyingBanner.style.display = 'none';
             window.location = "hitler.html";
-        }, 4500);
+        }, 6000);
     }
 }

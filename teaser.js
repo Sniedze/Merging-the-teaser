@@ -95,6 +95,9 @@ function untilWar() {
 }
 
 function textAppears() {
+    document.getElementById("maria").style.display = "none";
+    document.getElementById("ha").style.display = "none";
+    document.getElementById("actor").style.display = "none";
     theat.pause();
     mus.play();
     unt.play();
@@ -108,12 +111,12 @@ function textAppears() {
     para.appendChild(node);
     var element = document.getElementById("slogans");
     element.appendChild(para);
-    setTimeout(textDisappears, 3000);
+    setTimeout(textDisappears, 5000);
 
     function textDisappears() {
         document.getElementById("slogans").classList.add("fade");
     }
-    setTimeout(musicEnds, 5000);
+    setTimeout(musicEnds, 4500);
 }
 
 function musicEnds() {

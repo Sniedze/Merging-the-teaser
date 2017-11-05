@@ -17,6 +17,25 @@ body {
     overflow: hidden;
 }
 
+#restart {
+    font-family: Brush Script MT;
+    font-size: 3.5em;
+    font-weight: 600;
+    width: 15vw;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 4px solid grey;
+    color: #f8de28;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 65vh;
+    left: 23vw;
+    z-index: 35;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+}
+
 .curtainCloses {
     animation: closed 17s linear forwards;
 }
@@ -227,7 +246,7 @@ body {
     top: 25vh;
     z-index: 10;
     font-family: Brush Script MT;
-    font-size: 5em;
+    font-size: 3em;
     font-weight: 100;
     color: #f8de28;
     text-shadow: 0 0 10px black;

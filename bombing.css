@@ -29,7 +29,9 @@ h3 {
     position: absolute;
     left: 45vw;
     top: 200px;
-    color: darkgrey;
+    font-weight: 100;
+    color: #f8de28;
+    text-shadow: 0 0 10px black;
     opacity: 0;
 }
 
@@ -204,6 +206,7 @@ h3 {
 .actor2,
 .actor3 {
     max-height: 300px;
+    display: none;
 }
 
 .allBombs {

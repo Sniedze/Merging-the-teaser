@@ -80,7 +80,7 @@ function moustacheOff() {
     document.getElementById("hitler").style.backgroundImage = "url(images/hitler_sprite05.png)"
     document.getElementById("hitler").classList.add("hitlerBlushes");
 
-    setTimeout(moustachesAppear, 1500)
+    setTimeout(moustachesAppear, 1000)
 }
 
 function moustachesAppear() {
@@ -184,14 +184,19 @@ function peopleKilled() {
 
 function curtainCloses() {
     curtainAudio.play();
-    document.getElementById("curtCloses").loop = true;
     document.getElementById("curtain").classList.add("curtainCloses");
-    setTimeout(directToIndex, 21000);
+    setTimeout(directToIndex, 20000);
 }
 
 
 function directToIndex() {
     curtainAudio.pause();
     endMusic.pause();
+    document.getElementById("restart").style.display = "block";
+
+}
+document.getElementById("restart").addEventListener("click", backToIndex);
+
+function backToIndex() {
     window.location = "index.html";
 }
