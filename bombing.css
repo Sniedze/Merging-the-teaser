@@ -27,12 +27,13 @@ h3 {
     font-family: Brush Script MT;
     font-size: 3em;
     position: absolute;
-    left: 45vw;
-    top: 200px;
+    left: 35vw;
+    top: 25vh;
     font-weight: 100;
     color: #f8de28;
     text-shadow: 0 0 10px black;
     opacity: 0;
+    z-index: 10;
 }
 
 .opacity {
@@ -42,6 +43,7 @@ h3 {
 #sign {
     margin-left: 100vw;
     height: 201px;
+    z-index: 10;
     /*display: no;*/
 }
 
